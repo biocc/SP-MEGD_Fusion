@@ -13,6 +13,8 @@ Fusion is an assembly software tool developed by Yu Lab, which can precisely rec
   * Fusion:
     * Jiang W, Xiong Y, Xiao J, et al. Comprehensive assembly of monoclonal and mixed antibody sequences[J]. bioRxiv, 2024: 2024.08. 09.607415.
 
+</details>
+
 ## Assembly results
 
 未完待续...
