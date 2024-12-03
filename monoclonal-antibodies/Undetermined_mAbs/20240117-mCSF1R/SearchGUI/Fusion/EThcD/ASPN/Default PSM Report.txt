@@ -1,0 +1,3 @@
+	Protein(s)	Sequence	AAs Before	AAs After	Position	Modified Sequence	Variable Modifications	Fixed Modifications	Spectrum File	Spectrum Title	Spectrum Scan Number	RT	m/z	Measured Charge	Identification Charge	Theoretical Mass	Isotope Number	Precursor m/z Error [ppm]	Localization Confidence	Probabilistic PTM score	D-score	Confidence [%]	Validation
+1	HC	DTEYNQKFNGKATLTA	DG	DK	56	NH2-DTEYNQKFNGKATLTA-COOH			mCSRIR-ASPN-EThcD	mCSRIR:ASPN:EThcD:4828		1961.119135	900.946899414063	2+	2	1799.86899232895	0	5.6904707180723655				100.0	Confident
+2	HC	DGDTEYNQKFNGKATLTA	PG	DK	54	NH2-DGDTEYNQKFNGKATLTA-COOH			mCSRIR-ASPN-EThcD	mCSRIR:ASPN:EThcD:5300		2150.476639	986.975769042969	2+	2	1971.91739907335	0	9.922367862730972				100.0	Confident
