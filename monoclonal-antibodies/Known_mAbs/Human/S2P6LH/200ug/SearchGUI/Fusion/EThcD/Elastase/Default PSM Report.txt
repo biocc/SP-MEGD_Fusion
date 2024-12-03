@@ -1,0 +1,1 @@
+	Protein(s)	Sequence	AAs Before	AAs After	Position	Modified Sequence	Variable Modifications	Fixed Modifications	Spectrum File	Spectrum Title	Spectrum Scan Number	RT	m/z	Measured Charge	Identification Charge	Theoretical Mass	Isotope Number	Precursor m/z Error [ppm]	Localization Confidence	Probabilistic PTM score	D-score	Confidence [%]	Validation
