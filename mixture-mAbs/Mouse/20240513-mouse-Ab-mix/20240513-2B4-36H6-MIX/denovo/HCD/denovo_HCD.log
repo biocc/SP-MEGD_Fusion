@@ -1,0 +1,61 @@
+2024-05-14 00:45:18,223 INFO [casanovo/MainProcess] casanovo.main : Casanovo version 3.2.0
+2024-05-14 00:45:18,224 DEBUG [casanovo/MainProcess] casanovo.main : mode = denovo
+2024-05-14 00:45:18,224 DEBUG [casanovo/MainProcess] casanovo.main : model = /mnt/data_nas/jwb/antibody/model/HCD/epoch=9-step=550000.ckpt
+2024-05-14 00:45:18,224 DEBUG [casanovo/MainProcess] casanovo.main : peak_path = /mnt/data_nas/jwb/antibody/20240513-mouse-Ab-mix/20240513-2B4-36H6-MIX/process1/spectrum_2B4-36H6-MIX_HCD.mgf
+2024-05-14 00:45:18,224 DEBUG [casanovo/MainProcess] casanovo.main : peak_path_val = None
+2024-05-14 00:45:18,224 DEBUG [casanovo/MainProcess] casanovo.main : config = /mnt/data_nas/jwb/antibody/20240513-mouse-Ab-mix/20240513-2B4-36H6-MIX/denovo/HCD/config.yaml
+2024-05-14 00:45:18,224 DEBUG [casanovo/MainProcess] casanovo.main : output = /mnt/data_nas/jwb/antibody/20240513-mouse-Ab-mix/20240513-2B4-36H6-MIX/denovo/HCD/denovo_HCD
+2024-05-14 00:45:18,224 DEBUG [casanovo/MainProcess] casanovo.main : random_seed = 454
+2024-05-14 00:45:18,225 DEBUG [casanovo/MainProcess] casanovo.main : n_peaks = 150
+2024-05-14 00:45:18,225 DEBUG [casanovo/MainProcess] casanovo.main : min_mz = 50.52564895
+2024-05-14 00:45:18,225 DEBUG [casanovo/MainProcess] casanovo.main : max_mz = 2500.0
+2024-05-14 00:45:18,225 DEBUG [casanovo/MainProcess] casanovo.main : min_intensity = 0.01
+2024-05-14 00:45:18,225 DEBUG [casanovo/MainProcess] casanovo.main : remove_precursor_tol = 2.0
+2024-05-14 00:45:18,225 DEBUG [casanovo/MainProcess] casanovo.main : max_charge = 10
+2024-05-14 00:45:18,225 DEBUG [casanovo/MainProcess] casanovo.main : precursor_mass_tol = 10.0
+2024-05-14 00:45:18,225 DEBUG [casanovo/MainProcess] casanovo.main : isotope_error_range = (0, 1)
+2024-05-14 00:45:18,225 DEBUG [casanovo/MainProcess] casanovo.main : min_peptide_len = 6
+2024-05-14 00:45:18,225 DEBUG [casanovo/MainProcess] casanovo.main : dim_model = 512
+2024-05-14 00:45:18,225 DEBUG [casanovo/MainProcess] casanovo.main : n_head = 8
+2024-05-14 00:45:18,225 DEBUG [casanovo/MainProcess] casanovo.main : dim_feedforward = 1024
+2024-05-14 00:45:18,225 DEBUG [casanovo/MainProcess] casanovo.main : n_layers = 9
+2024-05-14 00:45:18,226 DEBUG [casanovo/MainProcess] casanovo.main : dropout = 0.0
+2024-05-14 00:45:18,226 DEBUG [casanovo/MainProcess] casanovo.main : dim_intensity = None
+2024-05-14 00:45:18,226 DEBUG [casanovo/MainProcess] casanovo.main : custom_encoder = None
+2024-05-14 00:45:18,226 DEBUG [casanovo/MainProcess] casanovo.main : max_length = 100
+2024-05-14 00:45:18,226 DEBUG [casanovo/MainProcess] casanovo.main : residues = {'G': 57.021464, 'A': 71.037114, 'S': 87.032028, 'P': 97.052764, 'V': 99.068414, 'T': 101.04767, 'C(+57.02)': 160.030649, 'L': 113.084064, 'I': 113.084064, 'N': 114.042927, 'D': 115.026943, 'Q': 128.058578, 'K': 128.094963, 'E': 129.042593, 'M': 131.040485, 'H': 137.058912, 'F': 147.068414, 'R': 156.101111, 'Y': 163.063329, 'W': 186.079313, 'M(+15.99)': 147.0354, 'N(+.98)': 115.026943, 'Q(+.98)': 129.042594, 'Q(-17.03)': 111.032029}
+2024-05-14 00:45:18,226 DEBUG [casanovo/MainProcess] casanovo.main : n_log = 1
+2024-05-14 00:45:18,226 DEBUG [casanovo/MainProcess] casanovo.main : tb_summarywriter = None
+2024-05-14 00:45:18,226 DEBUG [casanovo/MainProcess] casanovo.main : warmup_iters = 100000
+2024-05-14 00:45:18,226 DEBUG [casanovo/MainProcess] casanovo.main : max_iters = 600000
+2024-05-14 00:45:18,226 DEBUG [casanovo/MainProcess] casanovo.main : learning_rate = 0.0005
+2024-05-14 00:45:18,226 DEBUG [casanovo/MainProcess] casanovo.main : weight_decay = 1e-05
+2024-05-14 00:45:18,226 DEBUG [casanovo/MainProcess] casanovo.main : train_batch_size = 32
+2024-05-14 00:45:18,226 DEBUG [casanovo/MainProcess] casanovo.main : predict_batch_size = 512
+2024-05-14 00:45:18,227 DEBUG [casanovo/MainProcess] casanovo.main : n_beams = 5
+2024-05-14 00:45:18,227 DEBUG [casanovo/MainProcess] casanovo.main : top_match = 1
+2024-05-14 00:45:18,227 DEBUG [casanovo/MainProcess] casanovo.main : logger = None
+2024-05-14 00:45:18,227 DEBUG [casanovo/MainProcess] casanovo.main : max_epochs = 30
+2024-05-14 00:45:18,227 DEBUG [casanovo/MainProcess] casanovo.main : num_sanity_val_steps = 0
+2024-05-14 00:45:18,227 DEBUG [casanovo/MainProcess] casanovo.main : train_from_scratch = True
+2024-05-14 00:45:18,227 DEBUG [casanovo/MainProcess] casanovo.main : save_model = True
+2024-05-14 00:45:18,227 DEBUG [casanovo/MainProcess] casanovo.main : model_save_folder_path = 
+2024-05-14 00:45:18,227 DEBUG [casanovo/MainProcess] casanovo.main : save_weights_only = True
+2024-05-14 00:45:18,227 DEBUG [casanovo/MainProcess] casanovo.main : every_n_train_steps = 15000
+2024-05-14 00:45:18,227 DEBUG [casanovo/MainProcess] casanovo.main : no_gpu = False
+2024-05-14 00:45:18,227 DEBUG [casanovo/MainProcess] casanovo.main : n_workers = 20
+2024-05-14 00:45:18,227 INFO [casanovo/MainProcess] casanovo.main : Predict peptide sequences with Casanovo.
+2024-05-14 00:45:18,355 DEBUG [fsspec.local/MainProcess] local.__init__ : open file: /mnt/data_nas/jwb/antibody/model/HCD/epoch=9-step=550000.ckpt
+2024-05-14 00:45:22,565 INFO [depthcharge.data.hdf5/MainProcess] hdf5.__init__ : Reading 1 files...
+2024-05-14 00:46:09,811 WARNING [py.warnings/MainProcess] warnings._showwarnmsg : /home/jiangwenbin/miniconda3/envs/casanovo_3.2.0/lib/python3.10/site-packages/torch/nn/modules/transformer.py:408: UserWarning: The PyTorch API of nested tensors is in prototype stage and will change in the near future. (Triggered internally at ../aten/src/ATen/NestedTensorImpl.cpp:178.)
+  output = torch._nested_tensor_from_mask(output, src_key_padding_mask.logical_not(), mask_check=False)
+
+2024-05-14 00:46:10,110 WARNING [py.warnings/MainProcess] warnings._showwarnmsg : /home/jiangwenbin/miniconda3/envs/casanovo_3.2.0/lib/python3.10/site-packages/torch/nn/functional.py:5137: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+
+2024-05-14 00:46:10,820 WARNING [py.warnings/MainProcess] warnings._showwarnmsg : /home/jiangwenbin/miniconda3/envs/casanovo_3.2.0/lib/python3.10/site-packages/numpy/core/fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+
+2024-05-14 00:46:10,821 WARNING [py.warnings/MainProcess] warnings._showwarnmsg : /home/jiangwenbin/miniconda3/envs/casanovo_3.2.0/lib/python3.10/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+

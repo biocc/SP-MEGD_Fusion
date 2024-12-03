@@ -1,0 +1,2 @@
+CUDA_VISIBLE_DEVICES=1 nohup casanovo --mode=denovo --peak_path=/mnt/data_nas/jwb/antibody/20240513-mouse-Ab-mix/20240513-2B4-36H6-MIX/process1/spectrum_2B4-36H6-MIX_HCD.mgf --model=/mnt/data_nas/jwb/antibody/model/HCD/epoch=9-step=550000.ckpt --config=/mnt/data_nas/jwb/antibody/20240513-mouse-Ab-mix/20240513-2B4-36H6-MIX/denovo/HCD/config.yaml --output=/mnt/data_nas/jwb/antibody/20240513-mouse-Ab-mix/20240513-2B4-36H6-MIX/denovo/HCD/denovo_HCD >/mnt/data_nas/jwb/antibody/20240513-mouse-Ab-mix/20240513-2B4-36H6-MIX/denovo/HCD/run.log 2>&1 &
+
