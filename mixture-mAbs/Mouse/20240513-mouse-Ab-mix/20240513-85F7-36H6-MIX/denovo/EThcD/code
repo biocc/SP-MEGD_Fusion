@@ -1,0 +1,2 @@
+CUDA_VISIBLE_DEVICES=1 nohup casanovo --mode=denovo --peak_path=/mnt/data_nas/jwb/antibody/20240506-17A2/process1/spectrum_17A2_EThcD.mgf --model=/mnt/data_nas/jwb/antibody/model/EThcD/epoch=5-step=12500.ckpt --config=/mnt/data_nas/jwb/antibody/20240506-17A2/denovo/EThcD/config.yaml --output=/mnt/data_nas/jwb/antibody/20240506-17A2/denovo/EThcD/denovo_EThcD >/mnt/data_nas/jwb/antibody/20240506-17A2/denovo/EThcD/run.log 2>&1 &
+
