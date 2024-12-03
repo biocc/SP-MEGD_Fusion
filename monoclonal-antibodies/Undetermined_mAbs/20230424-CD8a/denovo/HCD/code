@@ -1,0 +1,2 @@
+CUDA_VISIBLE_DEVICES=0 nohup casanovo --mode=denovo --peak_path=/mnt/data_nas/jwb/antibody/20230424-CD8a/process1/spectrum_CD8a_HCD.mgf --model=/mnt/data_nas/jwb/antibody/model/HCD/epoch=9-step=550000.ckpt --config=/mnt/data_nas/jwb/antibody/20230424-CD8a/denovo/HCD/config.yaml --output=/mnt/data_nas/jwb/antibody/20230424-CD8a/denovo/HCD/denovo_HCD >/mnt/data_nas/jwb/antibody/20230424-CD8a/denovo/HCD/run.log 2>&1 &
+
