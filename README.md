@@ -31,8 +31,9 @@ During the first run, we conducted tests using both the stable version Stitch1.4
 
 <details><summary>Click here for all citations</summary>  
 * Likic, V. (2008). The Needleman-Wunsch algorithm for sequence alignment. Lecture at the 7th Melbourne Bioinformatics Course, Bi021 Molecular Science and Biotechnology Institute, University of Melbourne, pp. 1–46.  
-
+<br>  
 * Schulte, D., Snijder, J. (2024). A handle on mass coincidence errors in de novo sequencing of antibodies by bottom-up proteomics. *Journal of Proteome Research*.
 
 </details>
+
 
