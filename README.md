@@ -27,10 +27,11 @@ For the alignment between assembled sequences and actual antibody sequences, or 
 
 Stitch has recently emerged as a state-of-the-art public method for antibody sequence assembly. Users are required to define two main parameters: the cutoff score for peptide reads and the recombined segment orders. The typical recombined segment orders are IGHV * IGHJ IGHC for the heavy chain and IGLV IGLJ IGLC for the light chain. The asterisk (**) represents a gap between adjacent segments, which is extended by overhanging peptide reads. We have chosen cutoff scores of 95, 90, 85 and 50 for peptide reads. Scores of 95, 90 and 85 are based on the default parameters from Stitch's paper or batch file examples, while 50 is used as the threshold in Fusion. 
 
-During the first run, we conducted tests using both the stable version Stitch1.4.0 and the latest version Stitch1.5.0 with these peptide read cutoff scores, common recombined segment orders, and other default parameters (./Stitch/Assembly/**). However, the actual length of light chain CDR3 for BD5514LH and S2P6LH antibodies exceeds the template. Therefore, we modified the recombined segment order of the light chain to IGLV*IGLJ IGLC for these two antibodies (./Stitch/Assembly1/**).
+During the first run, we conducted tests using both the stable version Stitch1.4.0 and the latest version Stitch1.5.0 with these peptide read cutoff scores, common recombined segment orders, and other default parameters (./Stitch/Assembly/ *). However, the actual length of light chain CDR3 for BD5514LH and S2P6LH antibodies exceeds the template. Therefore, we modified the recombined segment order of the light chain to IGLV*IGLJ IGLC for these two antibodies (./Stitch/Assembly1/ *).
 
 <details><summary>Click here for all citations </summary>
-    * Likic, V.: The needleman-wunsch algorithm for sequence alignment. Lecture given at the 7th Melbourne Bioinformatics Course, Bi021 Molecular Science and Biotechnology Institute, University of Melbourne, 1–46 (2008)
-    * Schulte, D., Snijder, J.: A handle on mass coincidence errors in de novo sequencing of antibodies by bottom-up proteomics. Journal of Proteome Research (2024)
+   * Likic, V.: The needleman-wunsch algorithm for sequence alignment. Lecture given at the 7th Melbourne Bioinformatics Course, Bi021 Molecular Science and Biotechnology Institute, University of Melbourne, 1–46 (2008)
+ 
+   * Schulte, D., Snijder, J.: A handle on mass coincidence errors in de novo sequencing of antibodies by bottom-up proteomics. Journal of Proteome Research (2024)
  
 </details>
