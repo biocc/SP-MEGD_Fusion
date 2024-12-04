@@ -4,7 +4,7 @@ Mass spectrometry-based de novo sequencing remains challenging due to unexpected
 
 Fusion is an assembly software tool developed by Yu Lab, which can precisely reconstruct monoclonal antibody sequences with approximately 100% accuracy, including isoleucine/leucine (I/L) differentiation. Notably, Fusion has demonstrated its capability in precisely sequencing monoclonal antibody mixture at a resolution comparable to that of single monoclonal antibody. 
 
-The antibody de novo sequencing analysis in this work was finished on the XA-Novo platform (https://xa-novo.com/).
+The antibody *de novo* sequencing analysis in this work was finished on the XA-Novo platform (https://xa-novo.com/).
 
 
 <details><summary>Click here for all citations </summary>
