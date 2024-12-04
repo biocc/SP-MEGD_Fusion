@@ -30,8 +30,8 @@ Stitch has recently emerged as a state-of-the-art public method for antibody seq
 During the first run, we conducted tests using both the stable version Stitch1.4.0 and the latest version Stitch1.5.0 with these peptide read cutoff scores, common recombined segment orders, and other default parameters (./Stitch/Assembly/ *). However, the actual length of light chain CDR3 for BD5514LH and S2P6LH antibodies exceeds the template. Therefore, we modified the recombined segment order of the light chain to IGLV*IGLJ IGLC for these two antibodies ( ./Stitch/Assembly1/ * ).
 
 <details><summary>Click here for all citations </summary>
-   * Likic, V.: The needleman-wunsch algorithm for sequence alignment. Lecture given at the 7th Melbourne Bioinformatics Course, Bi021 Molecular Science and Biotechnology Institute, University of Melbourne, 1–46 (2008)
+  * Likic, V.: The needleman-wunsch algorithm for sequence alignment. Lecture given at the 7th Melbourne Bioinformatics Course, Bi021 Molecular Science and Biotechnology Institute, University of Melbourne, 1–46 (2008)
  
-   * Schulte, D., Snijder, J.: A handle on mass coincidence errors in de novo sequencing of antibodies by bottom-up proteomics. Journal of Proteome Research (2024)
+  * Schulte, D., Snijder, J.: A handle on mass coincidence errors in de novo sequencing of antibodies by bottom-up proteomics. Journal of Proteome Research (2024)
  
 </details>
