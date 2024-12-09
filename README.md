@@ -30,9 +30,9 @@ DIQMTQSPSSLSASVGDRVTITCQASQDIGNYLNWYQQKPGKAPKLLIYDASHLETGVPSRFSGSGSGTDFTFTISSLQP
 ```
 The seven consecutive values represent the following positions: CDR1 start position, CDR1 end position, CDR2 start position, CDR2 end position, CDR3 start position, CDR3 end position, and the conserved region start position.
 
-In the alignment document, the complementarity-determining regions (CDRs) are color-coded: CDR1 in yellow, CDR2 in blue, and CDR3 in green.
-
 For the alignment between assembled sequences and actual antibody sequences, or sequences assembled by different algorithm, we utilized the global Needleman-Wunsch algorithm in conjunction with the BLOSUM60 matrix to achieve the most intuitive results. 
+
+In the alignment document, the complementarity-determining regions (CDRs) are color-coded: CDR1 in yellow, CDR2 in blue, and CDR3 in green.
 
 ### Assembly of Stitch for Known Monoclonal Antibody
 
