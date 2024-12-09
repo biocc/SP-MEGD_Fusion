@@ -47,4 +47,4 @@ During the first run, we conducted tests using both the stable version Stitch1.4
 
 ## Note
 
-The sequences produced in this study are intended solely for scientific research purposes and are strictly prohibited from commercial use. Any legal issues that may arise from their utilization shall be the sole responsibility of the user.
+The sequences deciphered in this study are intended solely for scientific research purposes and are strictly prohibited from commercial use. Any legal issues that may arise from their utilization shall be the sole responsibility of the user.
