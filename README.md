@@ -120,7 +120,7 @@ CUDA_VISIBLE_DEVICES=0 nohup casanovo --mode=denovo --peak_path=./denovo/spectru
 The pre-trained model (epoch=9-step=550000.ckpt) can be downloaded from here:
 https://drive.google.com/drive/folders/1EQIa1XhqHRFAVBYzgLWh60HiMVnlO4dR?usp=drive_link
 
-The running speed is about 1.085322 spectra/s using a RTX 1080 Ti GPU.
+The [demo data](https://github.com/biocc/SP-MEGD_Fusion/blob/main/Demo/Demo-Trypsin-HCD-20250120.mgf) includes 276 spectra. The total runtimes is 03:42 using a RTX 1080 Ti GPU.
 
 ## 3. Casanovo result preprocess
 
