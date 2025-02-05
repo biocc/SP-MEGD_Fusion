@@ -1,0 +1,123 @@
+###
+# Casanovo configuration.
+# Blank entries are interpreted as "None".
+# Parameters that can be modified when running inference with Casanovo,
+# i.e. denovo and eval modes in the command line interface, are marked with
+# "(I)". Other parameters shouldn't be changed unless a new Casanovo model
+# is being trained.
+###
+
+# Random seed to ensure reproducible results.
+random_seed: 454
+
+# Spectrum processing options.
+# Number of the most intense peaks to retain, any remaining peaks are discarded
+n_peaks: 150
+# Min peak m/z allowed, peaks with smaller m/z are discarded
+min_mz: 50.52564895  # 1.0005079 * 50.5
+# Max peak m/z allowed, peaks with larger m/z are discarded
+max_mz: 2500.0
+# Min peak intensity allowed, less intense peaks are discarded
+min_intensity: 0.01
+# Max absolute m/z difference allowed when removing the precursor peak
+remove_precursor_tol: 2.0  # Da
+# Max precursor charge allowed, spectra with larger charge are skipped
+max_charge: 10
+# Max absolute difference allowed with respect to observed precursor m/z (I)
+# Predictions outside the tolerance range are assinged a negative peptide score
+precursor_mass_tol: 10  # ppm
+# Isotopes to consider when comparing predicted and observed precursor m/z's (I)
+isotope_error_range: [0, 1]
+# The minimum length of predicted peptides (I).
+min_peptide_len: 6
+
+# Model architecture options.
+# Dimensionality of latent representations, i.e. peak embeddings
+dim_model: 512
+# Number of attention heads
+n_head: 8
+# Dimensionality of fully connected layers
+dim_feedforward: 1024
+# Number of transformer layers in spectrum encoder and peptide decoder
+n_layers: 9
+# Dropout rate for model weights
+dropout: 0.0
+# Number of dimensions to use for encoding peak intensity
+# Projected up to ``dim_model`` by default and summed with the peak m/z encoding
+dim_intensity:
+# Option to provide a pre-trained spectrum encoder when training
+# Trained from scratch by default
+custom_encoder:
+# Max decoded peptide length
+max_length: 100
+# Amino acid and modification vocabulary to use
+residues:
+  "G": 57.021464
+  "A": 71.037114
+  "S": 87.032028
+  "P": 97.052764
+  "V": 99.068414
+  "T": 101.047679
+  "C(+57.02)": 160.030649 # 103.009185 + 57.021464
+  "L": 113.084064
+  "I": 113.084064
+  "N": 114.042927
+  "D": 115.026943
+  "Q": 128.058578
+  "K": 128.094963
+  "E": 129.042593
+  "M": 131.040485
+  "H": 137.058912
+  "F": 147.068414
+  "R": 156.101111
+  "Y": 163.063329
+  "W": 186.079313
+  # Amino acid modifications.
+  "M(+15.99)": 147.035400    # Met oxidation:   131.040485 + 15.994915
+  "N(+.98)": 115.026943     # Asn deamidation: 114.042927 +  0.984016
+  "Q(+.98)": 129.042594     # Gln deamidation: 128.058578 +  0.984016
+  # N-terminal modifications.
+  #"+42.011": 42.010565      # Acetylation
+  #"+43.006": 43.005814      # Carbamylation
+  "Q(-17.03)": 111.032029     # 128.058578-17.026549
+  #"+43.006-17.027": 25.980265
+# Logging frequency in training steps
+n_log: 1
+# Tensorboard object to keep track of training metrics
+tb_summarywriter:
+# Number of warmup iterations for learning rate scheduler
+warmup_iters: 100_000
+# Max number of iterations for learning rate scheduler
+max_iters: 600_000
+# Learning rate for weight updates during training
+learning_rate: 5e-4
+# Regularization term for weight updates
+weight_decay: 1e-5
+
+# Training/inference options.
+# Number of spectra in one training batch
+train_batch_size: 32
+# Number of spectra in one inference batch (I)
+predict_batch_size: 256
+# Number of beams used in beam search (I)
+n_beams: 5
+# Number of PSMs for each spectrum (I)
+top_match: 1
+# Object for logging training progress
+logger:
+# Max number of training epochs
+max_epochs: 20
+# Number of validation steps to run before training begins
+num_sanity_val_steps: 0
+# Set to "False" to further train a pre-trained Casanovo model
+train_from_scratch: True
+# Save model checkpoints during training
+save_model: True
+# Path to saved checkpoints
+model_save_folder_path: ""
+# Set to "False" to save the PyTorch model instance
+save_weights_only: True
+# Model validation and checkpointing frequency in training steps
+every_n_train_steps: 15_000
+# Disable usage of a GPU (including Apple MPS):
+no_gpu: False
