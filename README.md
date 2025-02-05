@@ -155,6 +155,8 @@ Users can use this [script](https://github.com/biocc/SP-MEGD_Fusion/blob/main/mo
 
 After obtained the assembly sequence, you can run the R code to analysis the coverage depth. [Demo](https://github.com/biocc/SP-MEGD_Fusion/blob/main/monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/Fusion/casanovo/50-cleaned/code.txt)
 
+Actually,  step 1-4 (ie. antibody de novo sequencing analysis) can finish on the [XA-Novo platform](https://xa-novo.com/) directly.
+
 ## Note
 
 The sequences deciphered in this study are intended solely for scientific research purposes and are strictly prohibited from commercial use. Any legal issues that may arise from their utilization shall be the sole responsibility of the user.
