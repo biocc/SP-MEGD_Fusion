@@ -78,7 +78,7 @@ Windows:
 
 The CRAN package should be compatible with Windows, Mac, and Linux operating systems.
 
-* Users should have [R](https://www.r-project.org/) version 3.4.0 or higher, and several packages set up from CRAN.
+* Users should have [R](https://www.r-project.org/) version 3.4.0 or higher, and several packages set up from  [CRAN](https://cran.r-project.org/mirrors.html).
 * [python](https://www.python.org/) (>= 3.10)
 * [numpy](https://numpy.org/)  (>= 1.26.2)
 * [pandas](https://pandas.pydata.org/) (>= 2.1.3)
