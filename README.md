@@ -64,6 +64,7 @@ pip install casanovo==3.2.0
 #After installation, test that it was successful by viewing the Casanovo command line interface help:
 casanovo --help
 ```
+Typical install time consumes 11:39. But it is easily affected by the Internet speed.
 
 ## Installing R version 3.4.2 on Ubuntu 16.04
 
