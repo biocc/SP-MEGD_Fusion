@@ -72,7 +72,7 @@ SP-MEGD requires only a standard computer with about 2 GB of RAM to support the 
 
 The package development version is tested on *Linux* operating systems. The developmental version of the package has been tested on the following systems:
 
-Linux: Ubuntu 16.04  
+Linux: Ubuntu >= 16.04  
 Mac OSX:  
 Windows:  
 
