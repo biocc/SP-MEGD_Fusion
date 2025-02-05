@@ -120,6 +120,8 @@ CUDA_VISIBLE_DEVICES=0 nohup casanovo --mode=denovo --peak_path=./denovo/spectru
 The pre-trained model (epoch=9-step=550000.ckpt) can be downloaded from here:
 https://drive.google.com/drive/folders/1EQIa1XhqHRFAVBYzgLWh60HiMVnlO4dR?usp=drive_link
 
+The running speed is about 1.085322 spectra/s using a RTX 1080 Ti GPU.
+
 ## 3. Casanovo result preprocess
 
 Users can use this [script](https://github.com/biocc/SP-MEGD_Fusion/blob/main/monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/denovo/HCD/Casanovo_process.ipynb) to process the denovo result for the later aseembly.
