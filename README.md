@@ -3,13 +3,12 @@
 
 - [Overview](#overview)
 - [License](https://github.com/biocc/SP-MEGD_Fusion/blob/main/LICENSE)
-- Citation
-- [Citation](#Click here for all citations)
 - [Results](https://github.com/biocc/SP-MEGD_Fusion)
 - [R code](https://github.com/biocc/SP-MEGD_Fusion)
 - [System Requirements](#system-requirements)
 - [Installation Guide](#installation-guide)
 - [Demo](monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/Fusion/casanovo/50-non_cleaned/code.txt)
+- Citation
 
 # Overview
 
