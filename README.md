@@ -142,9 +142,9 @@ The pre-trained model (epoch=9-step=550000.ckpt) can be downloaded from here:
 https://drive.google.com/drive/folders/1EQIa1XhqHRFAVBYzgLWh60HiMVnlO4dR?usp=drive_link
 
 ## 2. casanovo result preprocess
-```
+
 Users can use this [script](https://github.com/biocc/SP-MEGD_Fusion/blob/main/monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/denovo/HCD/Casanovo_process.ipynb) to process the denovo result for the later aseembly.
-```
+
 ## 3. Assembly
 ```
 * Fusion assembler is available for academic users, it can be accessed with the following link: https://xa-novo.com/.
@@ -152,9 +152,9 @@ Users can use this [script](https://github.com/biocc/SP-MEGD_Fusion/blob/main/mo
 ```
   
 ## 4. coverage-depth
-```
+
 After obtained the assembly sequence, you can run the R code to analysis the coverage depth. [Demo](https://github.com/biocc/SP-MEGD_Fusion/blob/main/monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/Fusion/casanovo/50-cleaned/code.txt)
-```
+
 ## Note
 
 The sequences deciphered in this study are intended solely for scientific research purposes and are strictly prohibited from commercial use. Any legal issues that may arise from their utilization shall be the sole responsibility of the user.
