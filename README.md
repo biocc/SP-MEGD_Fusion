@@ -1,6 +1,7 @@
 ## Contents
 
 - [Overview](#overview)
+- [Overview]
 - [Repo Contents](#repo-contents)
 - [System Requirements](#system-requirements)
 - [Installation Guide](#installation-guide)
