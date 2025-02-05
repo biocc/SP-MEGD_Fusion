@@ -14,7 +14,7 @@
 
 Mass spectrometry-based *de novo* sequencing remains challenging due to unexpected missing of certain ion information. We developed an innovative sample preparation approach for the current *de novo* sequencing challenges. The methodology, referred to as SP-MEGD for Single-Pot and Multi-Enzymatic Gradient Digestion, capitalizes on a five-protease gradient digestion by sampling every two hours for a total of 6 hours in an integrative reactor. The SP-MEGD method could engender numerous missed cleavage events and produce various peptide products of diverse lengths with overlapping stretches of residues, enabling efficient database-free *de novo* sequencing.
 
-Fusion is an assembly software tool developed by Yu Lab, which can precisely reconstruct monoclonal antibody sequences with approximately 100% accuracy, including isoleucine/leucine (I/L) differentiation. Notably, Fusion has demonstrated its capability in precisely sequencing monoclonal antibody mixture at a resolution comparable to that of single monoclonal antibody. 
+Fusion is an assembly software tool previously developed by Yu Lab, which can precisely reconstruct monoclonal antibody sequences with approximately 100% accuracy, including isoleucine/leucine (I/L) differentiation. Notably, Fusion has demonstrated its capability in precisely sequencing monoclonal antibody mixture at a resolution comparable to that of single monoclonal antibody. 
 
 The antibody *de novo* sequencing analysis in this work was finished on the XA-Novo platform (https://xa-novo.com/).
 
@@ -64,10 +64,7 @@ During the first run, we conducted tests using both the stable version Stitch1.4
 
 ## Hardware Requirements
 
-SP-MEGD requires only a standard computer with enough RAM to support the operations defined by a user. For minimal performance, this will be a computer with about 2 GB of RAM. For optimal performance, we recommend a computer with the following specs:
-
-RAM: 4+ GB  
-CPU: 4+ cores
+SP-MEGD requires only a standard computer with about 2 GB of RAM to support the operations.
 
 ## Software Requirements
 
