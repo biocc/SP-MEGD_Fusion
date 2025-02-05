@@ -119,11 +119,17 @@ install.packages(c('ggplot2', 'stringr', 'gridExtra', 'data.table'))
 
 # Usage Guide
 
-## 1. De novo peptide sequencing
+## 1. Format raw data
+
+De novo sequencing requires mgf (Mascot generic format) files.
+
+You can use Proteowizard `msconvert` to convert your .raw/.mzxml/.mzml files to .mgf format. Proteowizard can be simply installed using [conda](https://anaconda.org/bioconda/proteowizard).
+
+`msconvert preformatted_spectra.raw --mgf --filter "peakPicking vendor" --filter "zeroSamples removeExtra"--filter "titleMaker Run: <RunId>, Index: <Index>, Scan: <ScanNumber>"`
 
 Your .mgf file should now look like this
 ```
-BEGIN IONS
+START IONS
 TITLE= Run: antibody_tryptic_1, Index: 745, Scan: 756
 RTINSECONDS=199.46399
 PEPMASS=593.2639
@@ -134,6 +140,9 @@ CHARGE=2+
 ...
 END IONS
 ```
+
+## 2. De novo peptide sequencing
+
 run the following code:
 
 CUDA_VISIBLE_DEVICES=0 nohup casanovo --mode=denovo --peak_path=./denovo/spectrum_HCD.mgf --model=./epoch=9-step=550000.ckpt --config=[./denovo/config.yaml](https://github.com/biocc/SP-MEGD_Fusion/blob/main/monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/denovo/HCD/config.yaml) --output=./denovo/denovo_HCD >./denovo/run.log 2>&1 &
@@ -141,19 +150,21 @@ CUDA_VISIBLE_DEVICES=0 nohup casanovo --mode=denovo --peak_path=./denovo/spectru
 The pre-trained model (epoch=9-step=550000.ckpt) can be downloaded from here:
 https://drive.google.com/drive/folders/1EQIa1XhqHRFAVBYzgLWh60HiMVnlO4dR?usp=drive_link
 
-## 2. casanovo result preprocess
+## 3. Casanovo result preprocess
 
 Users can use this [script](https://github.com/biocc/SP-MEGD_Fusion/blob/main/monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/denovo/HCD/Casanovo_process.ipynb) to process the denovo result for the later aseembly.
 
-## 3. Assembly
+## 4. Assembly
 
 * Fusion assembler is available for academic users, it can be accessed with the following link: https://xa-novo.com/.
 * Stitch assembler is available for academic users, it can be accessed with the following link: https://github.com/snijderlab/stitch.
 
   
-## 4. coverage-depth
+## 5. Coverage-depth
 
-After obtained the assembly sequence, you can run the R code to analysis the coverage depth. [Demo](https://github.com/biocc/SP-MEGD_Fusion/blob/main/monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/Fusion/casanovo/50-cleaned/code.txt)
+After obtained the assembly sequence, you can run the R code to analysis the coverage depth. [Demo](https://github.com/biocc/SP-MEGD_Fusion/blob/main/monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/Fusion/casanovo/50-cleaned/code.txt).
+The [coveage depth result](https://github.com/biocc/SP-MEGD_Fusion/blob/main/monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/Fusion/casanovo/50-non_cleaned/coverage-depth.txt) can assist you in evaluating the reliability of assembly results to a certain degree.
+
 
 Actually,  step 1-4 (ie. antibody de novo sequencing analysis) can finish on the [XA-Novo platform](https://xa-novo.com/) directly.
 
