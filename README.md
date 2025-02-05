@@ -29,37 +29,6 @@ The antibody *de novo* sequencing analysis in this work was finished on the XA-N
 
 </details>
 
-## Assembly results
-
-The final sequence assembled by Fusion are displayed in ./Fusion/I-L/*.fasta. In its application, the Fusion algorithm identifies isoleucine or leucine residues by integrating template sequence information with experimental evidence and the detection of diagnostic w-ions, thereby enhancing the precision of isomer discrimination.
-
-./Fusion/I-L/*.fasta look like this.
-```
->HC 26,33,51,58,97,114,126
-QVQLVQSGAEVKKPGSSVKVSCKASGGTFRSHVISWVRQAPGQGLEWMGGFIPLFGTTIYAQAFQGRVMISADESTSTAYMELSSLRSEDTAVYFCARLFPNGDPNSPEDGFDIWGQGTLVTVSAASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHTCPPCPAPELLGGPSVFLFPPKPKDTLMISRTPEVTCVVVDVSHEDPEVKFNWYV
->LC 27,32,50,52,89,98,109
-DIQMTQSPSSLSASVGDRVTITCQASQDIGNYLNWYQQKPGKAPKLLIYDASHLETGVPSRFSGSGSGTDFTFTISSLQPEDIATYYCQRYDDLPSYTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKH
-```
-The seven consecutive values represent the following positions: CDR1 start position, CDR1 end position, CDR2 start position, CDR2 end position, CDR3 start position, CDR3 end position, and the conserved region start position.
-
-For the alignment between assembled sequences and actual antibody sequences, or sequences assembled by different algorithm, we utilized the global Needleman-Wunsch algorithm in conjunction with the BLOSUM60 matrix to achieve the most intuitive results. 
-
-In the alignment document, the complementarity-determining regions (CDRs) are color-coded: CDR1 in yellow, CDR2 in blue, and CDR3 in green.
-
-### Assembly of Stitch for Known Monoclonal Antibody
-
-Stitch has recently emerged as a state-of-the-art public method for antibody sequence assembly. Users are required to define two main parameters: the cutoff score for peptide reads and the recombined segment orders. The typical recombined segment orders are IGHV * IGHJ IGHC for the heavy chain and IGLV IGLJ IGLC for the light chain. The asterisk ( * ) represents a gap between adjacent segments, which is extended by overhanging peptide reads. We have chosen cutoff scores of 95, 90, 85 and 50 for peptide reads. Scores of 95, 90 and 85 are based on the default parameters from Stitch's paper or batch file examples, while 50 is used as the threshold in Fusion. 
-
-During the first run, we conducted tests using both the stable version Stitch1.4.0 and the latest version Stitch1.5.0 with these peptide read cutoff scores, common recombined segment orders, and other default parameters (./Stitch/Assembly/ * ). However, the actual length of light chain CDR3 for BD5514LH and S2P6LH antibodies exceeds the template. Therefore, we modified the recombined segment order of the light chain to IGLV*IGLJ IGLC for these two antibodies ( ./Stitch/Assembly1/ * ).
-
-<details><summary>Click here for all citations</summary>  
-* Likic, V. (2008). The Needleman-Wunsch algorithm for sequence alignment. Lecture at the 7th Melbourne Bioinformatics Course, Bi021 Molecular Science and Biotechnology Institute, University of Melbourne, pp. 1–46.  
-<br>  
-* Schulte, D., Snijder, J. (2024). A handle on mass coincidence errors in de novo sequencing of antibodies by bottom-up proteomics. *Journal of Proteome Research*.
-
-</details>
-
-
 # System Requirements
 
 ## Hardware Requirements
@@ -159,7 +128,36 @@ Users can use this [script](https://github.com/biocc/SP-MEGD_Fusion/blob/main/mo
 * Fusion assembler is available for academic users, it can be accessed with the following link: https://xa-novo.com/.
 * Stitch assembler is available for academic users, it can be accessed with the following link: https://github.com/snijderlab/stitch.
 
-  
+### Fusion Assembly results
+
+The final sequence assembled by Fusion are displayed in ./Fusion/I-L/*.fasta. In its application, the Fusion algorithm identifies isoleucine or leucine residues by integrating template sequence information with experimental evidence and the detection of diagnostic w-ions, thereby enhancing the precision of isomer discrimination.
+
+./Fusion/I-L/*.fasta look like this.
+```
+>HC 26,33,51,58,97,114,126
+QVQLVQSGAEVKKPGSSVKVSCKASGGTFRSHVISWVRQAPGQGLEWMGGFIPLFGTTIYAQAFQGRVMISADESTSTAYMELSSLRSEDTAVYFCARLFPNGDPNSPEDGFDIWGQGTLVTVSAASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHTCPPCPAPELLGGPSVFLFPPKPKDTLMISRTPEVTCVVVDVSHEDPEVKFNWYV
+>LC 27,32,50,52,89,98,109
+DIQMTQSPSSLSASVGDRVTITCQASQDIGNYLNWYQQKPGKAPKLLIYDASHLETGVPSRFSGSGSGTDFTFTISSLQPEDIATYYCQRYDDLPSYTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKH
+```
+The seven consecutive values represent the following positions: CDR1 start position, CDR1 end position, CDR2 start position, CDR2 end position, CDR3 start position, CDR3 end position, and the conserved region start position.
+
+For the alignment between assembled sequences and actual antibody sequences, or sequences assembled by different algorithm, we utilized the global Needleman-Wunsch algorithm in conjunction with the BLOSUM60 matrix to achieve the most intuitive results. 
+
+In the alignment document, the complementarity-determining regions (CDRs) are color-coded: CDR1 in yellow, CDR2 in blue, and CDR3 in green.
+
+### Assembly of Stitch for Known Monoclonal Antibody
+
+Stitch has recently emerged as a state-of-the-art public method for antibody sequence assembly. Users are required to define two main parameters: the cutoff score for peptide reads and the recombined segment orders. The typical recombined segment orders are IGHV * IGHJ IGHC for the heavy chain and IGLV IGLJ IGLC for the light chain. The asterisk ( * ) represents a gap between adjacent segments, which is extended by overhanging peptide reads. We have chosen cutoff scores of 95, 90, 85 and 50 for peptide reads. Scores of 95, 90 and 85 are based on the default parameters from Stitch's paper or batch file examples, while 50 is used as the threshold in Fusion. 
+
+During the first run, we conducted tests using both the stable version Stitch1.4.0 and the latest version Stitch1.5.0 with these peptide read cutoff scores, common recombined segment orders, and other default parameters (./Stitch/Assembly/ * ). However, the actual length of light chain CDR3 for BD5514LH and S2P6LH antibodies exceeds the template. Therefore, we modified the recombined segment order of the light chain to IGLV*IGLJ IGLC for these two antibodies ( ./Stitch/Assembly1/ * ).
+
+<details><summary>Click here for all citations</summary>  
+* Likic, V. (2008). The Needleman-Wunsch algorithm for sequence alignment. Lecture at the 7th Melbourne Bioinformatics Course, Bi021 Molecular Science and Biotechnology Institute, University of Melbourne, pp. 1–46.  
+<br>  
+* Schulte, D., Snijder, J. (2024). A handle on mass coincidence errors in de novo sequencing of antibodies by bottom-up proteomics. *Journal of Proteome Research*.
+
+</details>
+
 ## 5. Coverage-depth
 
 After obtained the assembly sequence, you can run the [R code](https://github.com/biocc/SP-MEGD_Fusion/blob/main/monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/Fusion/casanovo/50-cleaned/code.txt) to analysis the coverage depth.
