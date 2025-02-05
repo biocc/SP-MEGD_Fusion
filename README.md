@@ -162,7 +162,7 @@ Users can use this [script](https://github.com/biocc/SP-MEGD_Fusion/blob/main/mo
   
 ## 5. Coverage-depth
 
-After obtained the assembly sequence, you can run the R code to analysis the coverage depth. [Demo](https://github.com/biocc/SP-MEGD_Fusion/blob/main/monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/Fusion/casanovo/50-cleaned/code.txt).
+After obtained the assembly sequence, you can run the [R code](https://github.com/biocc/SP-MEGD_Fusion/blob/main/monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/Fusion/casanovo/50-cleaned/code.txt) to analysis the coverage depth.
 The [coveage depth result](https://github.com/biocc/SP-MEGD_Fusion/blob/main/monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/Fusion/casanovo/50-non_cleaned/coverage-depth.txt) can assist you in evaluating the reliability of assembly results to a certain degree.
 
 
