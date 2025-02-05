@@ -5,6 +5,7 @@
 - [License](https://github.com/biocc/SP-MEGD_Fusion/blob/main/LICENSE)
 - [System Requirements](#system-requirements)
 - [Installation Guide](#installation-guide)
+- [Usage Guide](#Usage-guide)
 - [Results](https://github.com/biocc/SP-MEGD_Fusion)
 - [R code](https://github.com/biocc/SP-MEGD_Fusion)
 - [Demo](monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/)
