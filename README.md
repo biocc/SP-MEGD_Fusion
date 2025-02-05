@@ -135,9 +135,9 @@ CHARGE=2+
 END IONS
 ```
 run the following code:
-```
+
 CUDA_VISIBLE_DEVICES=0 nohup casanovo --mode=denovo --peak_path=./denovo/spectrum_HCD.mgf --model=./epoch=9-step=550000.ckpt --config=[./denovo/config.yaml](https://github.com/biocc/SP-MEGD_Fusion/blob/main/monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/denovo/HCD/config.yaml) --output=./denovo/denovo_HCD >./denovo/run.log 2>&1 &
-```
+
 The pre-trained model (epoch=9-step=550000.ckpt) can be downloaded from here:
 https://drive.google.com/drive/folders/1EQIa1XhqHRFAVBYzgLWh60HiMVnlO4dR?usp=drive_link
 
@@ -146,10 +146,10 @@ https://drive.google.com/drive/folders/1EQIa1XhqHRFAVBYzgLWh60HiMVnlO4dR?usp=dri
 Users can use this [script](https://github.com/biocc/SP-MEGD_Fusion/blob/main/monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/denovo/HCD/Casanovo_process.ipynb) to process the denovo result for the later aseembly.
 
 ## 3. Assembly
-```
+
 * Fusion assembler is available for academic users, it can be accessed with the following link: https://xa-novo.com/.
 * Stitch assembler is available for academic users, it can be accessed with the following link: https://github.com/snijderlab/stitch.
-```
+
   
 ## 4. coverage-depth
 
