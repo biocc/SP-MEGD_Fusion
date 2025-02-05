@@ -64,7 +64,7 @@ During the first run, we conducted tests using both the stable version Stitch1.4
 
 ## Hardware Requirements
 
-SP-MEGD requires only a standard computer with about 2 GB of RAM to support the operations.
+SP-MEGD requires a RTX >= 1080 GPU to support the operations.
 
 ## Software Requirements
 
@@ -84,6 +84,16 @@ The CRAN package should be compatible with Windows, Mac, and Linux operating sys
 * [pandas](https://pandas.pydata.org/) (>= 2.1.3)
 
 # Installation Guide
+
+## Create a conda environment on Ubuntu 16.04
+```
+conda create --name SP-MEGD python=3.10 -y
+conda activate SP-MEGD
+pip install casanovo==3.2.0
+
+#After installation, test that it was successful by viewing the Casanovo command line interface help:
+casanovo --help
+```
 
 ## Installing R version 3.4.2 on Ubuntu 16.04
 
@@ -107,6 +117,44 @@ Users should install the following packages from an `R` terminal:
 install.packages(c('ggplot2', 'stringr', 'gridExtra', 'data.table'))
 ```
 
+# Usage Guide
+
+## 1. De novo peptide sequencing
+
+Your .mgf file should now look like this
+```
+BEGIN IONS
+TITLE= Run: antibody_tryptic_1, Index: 745, Scan: 756
+RTINSECONDS=199.46399
+PEPMASS=593.2639
+CHARGE=2+
+145.9389801 163.0
+145.9406433 490.0
+145.9423218 762.0
+...
+END IONS
+```
+run the following code:
+```
+CUDA_VISIBLE_DEVICES=0 nohup casanovo --mode=denovo --peak_path=./denovo/spectrum_HCD.mgf --model=./epoch=9-step=550000.ckpt --config=[./denovo/config.yaml](https://github.com/biocc/SP-MEGD_Fusion/blob/main/monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/denovo/HCD/config.yaml) --output=./denovo/denovo_HCD >./denovo/run.log 2>&1 &
+```
+The pre-trained model (epoch=9-step=550000.ckpt) can be downloaded from here:
+https://drive.google.com/drive/folders/1EQIa1XhqHRFAVBYzgLWh60HiMVnlO4dR?usp=drive_link
+
+## 2. casanovo result preprocess
+```
+Users can use this [script](https://github.com/biocc/SP-MEGD_Fusion/blob/main/monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/denovo/HCD/Casanovo_process.ipynb) to process the denovo result for the later aseembly.
+```
+## 3. Assembly
+```
+* Fusion assembler is available for academic users, it can be accessed with the following link: https://xa-novo.com/.
+* Stitch assembler is available for academic users, it can be accessed with the following link: https://github.com/snijderlab/stitch.
+```
+  
+## 4. coverage-depth
+```
+After obtained the assembly sequence, you can run the R code to analysis the coverage depth. [Demo](https://github.com/biocc/SP-MEGD_Fusion/blob/main/monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/Fusion/casanovo/50-cleaned/code.txt)
+```
 ## Note
 
 The sequences deciphered in this study are intended solely for scientific research purposes and are strictly prohibited from commercial use. Any legal issues that may arise from their utilization shall be the sole responsibility of the user.
