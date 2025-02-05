@@ -89,7 +89,7 @@ install.packages(c('ggplot2', 'stringr', 'gridExtra', 'data.table'))
 
 # Usage Guide
 
-## 1). Format raw data
+## 1. Format raw data
 
 De novo sequencing requires mgf (Mascot generic format) files.
 
@@ -111,7 +111,7 @@ CHARGE=2+
 END IONS
 ```
 
-## 2). De novo peptide sequencing
+## 2. De novo peptide sequencing
 
 run the following code:
 
@@ -120,16 +120,16 @@ CUDA_VISIBLE_DEVICES=0 nohup casanovo --mode=denovo --peak_path=./denovo/spectru
 The pre-trained model (epoch=9-step=550000.ckpt) can be downloaded from here:
 https://drive.google.com/drive/folders/1EQIa1XhqHRFAVBYzgLWh60HiMVnlO4dR?usp=drive_link
 
-## 3). Casanovo result preprocess
+## 3. Casanovo result preprocess
 
 Users can use this [script](https://github.com/biocc/SP-MEGD_Fusion/blob/main/monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/denovo/HCD/Casanovo_process.ipynb) to process the denovo result for the later aseembly.
 
-## 4). Assembly
+## 4. Assembly
 
 * Fusion assembler is available for academic users, it can be accessed with the following link: https://xa-novo.com/.
 * Stitch assembler is available for academic users, it can be accessed with the following link: https://github.com/snijderlab/stitch.
 
-### Fusion Assembly results
+### 1). Fusion Assembly results
 
 The final sequence assembled by Fusion are displayed in ./Fusion/I-L/*.fasta. In its application, the Fusion algorithm identifies isoleucine or leucine residues by integrating template sequence information with experimental evidence and the detection of diagnostic w-ions, thereby enhancing the precision of isomer discrimination.
 
@@ -146,7 +146,7 @@ For the alignment between assembled sequences and actual antibody sequences, or 
 
 In the alignment document, the complementarity-determining regions (CDRs) are color-coded: CDR1 in yellow, CDR2 in blue, and CDR3 in green.
 
-### Assembly of Stitch for Known Monoclonal Antibody
+### 2). Assembly of Stitch for Known Monoclonal Antibody
 
 Stitch has recently emerged as a state-of-the-art public method for antibody sequence assembly. Users are required to define two main parameters: the cutoff score for peptide reads and the recombined segment orders. The typical recombined segment orders are IGHV * IGHJ IGHC for the heavy chain and IGLV IGLJ IGLC for the light chain. The asterisk ( * ) represents a gap between adjacent segments, which is extended by overhanging peptide reads. We have chosen cutoff scores of 95, 90, 85 and 50 for peptide reads. Scores of 95, 90 and 85 are based on the default parameters from Stitch's paper or batch file examples, while 50 is used as the threshold in Fusion. 
 
@@ -159,7 +159,7 @@ During the first run, we conducted tests using both the stable version Stitch1.4
 
 </details>
 
-## 5). Coverage-depth
+## 5. Coverage-depth
 
 After obtained the assembly sequence, you can run the [R code](https://github.com/biocc/SP-MEGD_Fusion/blob/main/monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/Fusion/casanovo/50-cleaned/code.txt) to analysis the coverage depth.
 The [coveage depth result](https://github.com/biocc/SP-MEGD_Fusion/blob/main/monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/Fusion/casanovo/50-non_cleaned/coverage-depth.txt) can assist you in evaluating the reliability of assembly results to a certain degree.
