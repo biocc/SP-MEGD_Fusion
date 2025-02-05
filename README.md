@@ -166,7 +166,7 @@ After obtained the assembly sequence, you can run the [R code](https://github.co
 The [coveage depth result](https://github.com/biocc/SP-MEGD_Fusion/blob/main/monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/Fusion/casanovo/50-non_cleaned/coverage-depth.txt) can assist you in evaluating the reliability of assembly results to a certain degree.
 
 
-Actually,  step 1-4 (ie. antibody de novo sequencing analysis) can finish on the [XA-Novo platform](https://xa-novo.com/) directly.
+Actually,  step 1-4 (ie. antibody de novo sequencing analysis) can finish on the [XA-Novo platform](https://xa-novo.com/) directly. The only prerequisite is to provide a link to the mass spectrometry data along with related species information regarding the detected antibody.
 
 ## Note
 
