@@ -100,7 +100,7 @@ You can use Proteowizard `msconvert` to convert your .raw/.mzxml/.mzml files to 
 
 Your .mgf file should now look like this
 ```
-START IONS
+BEGIN IONS
 TITLE= Run: antibody_tryptic_1, Index: 745, Scan: 756
 RTINSECONDS=199.46399
 PEPMASS=593.2639
@@ -168,7 +168,7 @@ After obtained the assembly sequence, you can run the [R code](https://github.co
 The [coveage depth result](https://github.com/biocc/SP-MEGD_Fusion/blob/main/monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/Fusion/casanovo/50-non_cleaned/coverage-depth.txt) can assist you in evaluating the reliability of assembly results to a certain degree.
 
 
-Actually,  step 1-4 (ie. antibody de novo sequencing analysis) can finish on the [XA-Novo platform](https://xa-novo.com/) directly. The only prerequisite is to provide a link to the mass spectrometry data along with related species information regarding the detected antibody.
+Actually, step 1-4 (ie. antibody de novo sequencing analysis) can finish on the [XA-Novo platform](https://xa-novo.com/) directly. The only prerequisite is to provide a link to the mass spectrometry data along with related species information regarding the detected antibody. Researchers can perform their analyses with relative ease, eliminating the necessity for intricate configurations or specialized hardware requirements. 
 
 ## Note
 
