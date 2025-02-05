@@ -1,4 +1,16 @@
-# SP-MEGD_Fusion
+## Contents
+
+- [Overview](#overview)
+- [Repo Contents](#repo-contents)
+- [System Requirements](#system-requirements)
+- [Installation Guide](#installation-guide)
+- [Demo](#demo)
+- [Results](#results)
+- [License](./LICENSE)
+- [Issues](https://github.com/ebridge2/lol/issues)
+- [Citation](#citation)
+- 
+# Overview
 
 Mass spectrometry-based *de novo* sequencing remains challenging due to unexpected missing of certain ion information. We developed an innovative sample preparation approach for the current *de novo* sequencing challenges. The methodology, referred to as SP-MEGD for Single-Pot and Multi-Enzymatic Gradient Digestion, capitalizes on a five-protease gradient digestion by sampling every two hours for a total of 6 hours in an integrative reactor. The SP-MEGD method could engender numerous missed cleavage events and produce various peptide products of diverse lengths with overlapping stretches of residues, enabling efficient database-free *de novo* sequencing.
 
