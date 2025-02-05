@@ -7,7 +7,7 @@
 - [Installation Guide](#installation-guide)
 - [Results](https://github.com/biocc/SP-MEGD_Fusion)
 - [R code](https://github.com/biocc/SP-MEGD_Fusion)
-- [Demo](monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/Fusion/casanovo/50-non_cleaned/code.txt)
+- [Demo](monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/)
 - Citation
 
 # Overview
