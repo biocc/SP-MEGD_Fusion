@@ -5,7 +5,7 @@
 - Results
 - License
 - Citation
-- R code
+- [R code](https://github.com/biocc/SP-MEGD_Fusion)
 - System Requirements
 - Installation Guide
 - [Demo](monoclonal-antibodies/Known_mAbs/Human/S2P6/50ug/Fusion/casanovo/50-non_cleaned/code.txt)
