@@ -60,7 +60,10 @@ The CRAN package should be compatible with Windows, Mac, and Linux operating sys
 conda create --name SP-MEGD python=3.10 -y
 conda activate SP-MEGD
 pip install casanovo==3.2.0
-
+pip install pytorch-lightning==1.8.6
+pip install depthcharge-ms==0.1.0
+pip install tensorboard==2.11.0
+pip install numpy==1.26.4
 #After installation, test that it was successful by viewing the Casanovo command line interface help:
 casanovo --help
 ```
