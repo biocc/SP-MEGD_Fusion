@@ -66,6 +66,42 @@ pip install tensorboard==2.11.0
 pip install numpy==1.26.4
 #After installation, test that it was successful by viewing the Casanovo command line interface help:
 casanovo --help
+
+Usage: casanovo [OPTIONS]
+
+  Casanovo: De novo mass spectrometry peptide sequencing with a transformer model.
+  ================================================================================
+
+  Yilmaz, M., Fondrie, W. E., Bittremieux, W., Oh, S. & Noble, W. S. De novo
+  mass spectrometry peptide sequencing with a transformer model. Proceedings
+  of the 39th International Conference on Machine Learning - ICML '22 (2022)
+  doi:10.1101/2022.02.07.479481.
+
+  Official code website: https://github.com/Noble-Lab/casanovo
+
+Options:
+  --mode [denovo|train|eval]  The mode in which to run Casanovo:
+                              - "denovo" will predict peptide sequences for
+                              unknown MS/MS spectra.
+                              - "train" will train a model (from scratch or by
+                              continuing training a previously trained model).
+                              - "eval" will evaluate the performance of a
+                              trained model using previously acquired spectrum
+                              annotations.  [required]
+  --model FILE                The file name of the model weights (.ckpt file).
+  --peak_path TEXT            The file path with peak files for predicting
+                              peptide sequences or training Casanovo.
+                              [required]
+  --peak_path_val TEXT        The file path with peak files to be used as
+                              validation data during training.
+  --config FILE               The file name of the configuration file with
+                              custom options. If not specified, a default
+                              configuration will be used.
+  --output FILE               The base output file name to store logging
+                              (extension: .log) and (optionally) prediction
+                              results (extension: .csv).
+  --help                      Show this message and exit.
+
 ```
 Typical install time consumes 11:39. But it is easily affected by the Internet speed.
 
