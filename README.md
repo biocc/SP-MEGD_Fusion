@@ -101,7 +101,6 @@ Options:
                               (extension: .log) and (optionally) prediction
                               results (extension: .csv).
   --help                      Show this message and exit.
-
 ```
 Typical install time consumes 11:39. But it is easily affected by the Internet speed.
 
