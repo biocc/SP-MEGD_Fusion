@@ -1,1 +1,2 @@
-Pretrained models are used in the study and accessible through: https://drive.google.com/drive/folders/1EQIa1XhqHRFAVBYzgLWh60HiMVnlO4dR?usp=drive_link
+Pretrained models are used in the study and accessible through: https://zenodo.org/records/17266057 or
+https://drive.google.com/drive/folders/1EQIa1XhqHRFAVBYzgLWh60HiMVnlO4dR?usp=drive_link
