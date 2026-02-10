@@ -1,0 +1,3 @@
+We recommend mass-based version as the default approach, as it explicitly accounts for amino acid combinations of different lengths but identical masses (e.g., GG = N, GA = Q), thereby better reflecting the constraints of mass spectrometry. The original Levenshtein-based implementation is retained as an optional, faster version for users who prioritize runtime efficiency; when using this version, we strongly recommend examining the accompanying stdout.log and coverage_depth files to assess the reliability of the assembled sequences.
+
+The final results are all stored in the */I-L fold.
